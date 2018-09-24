@@ -32,8 +32,10 @@
         android:gravity="right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/currentnum">
+        app:layout_constraintTop_toBottomOf="@+id/currentnum"
+        app:layout_constraintVertical_bias="1.0">
 
         <TableRow
             android:layout_width="match_parent"
@@ -125,6 +127,7 @@
                 android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onClickDigit"
                 android:text="8"
                 android:textSize="35sp" />
 
@@ -182,5 +185,20 @@
                 android:textSize="35sp" />
 
         </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttondeleteone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickDeleteAll"
+                android:text="C"
+                android:textSize="35sp" />
+
+        </TableRow>
     </TableLayout>
+
 </android.support.constraint.ConstraintLayout>
